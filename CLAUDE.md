@@ -48,6 +48,10 @@ npm install && npm run dev
 **Data Flow**: Vue filters → `client/src/api.js` → FastAPI → In-memory filtering → Pydantic validation → Computed properties
 **Reactivity**: Raw data in refs (`allOrders`, `inventoryItems`), derived data in computed properties
 
+## Code Standards
+
+- **Always document non-obvious logic changes with comments** - Explain the WHY behind complex logic, workarounds, edge cases, and non-obvious implementation decisions
+
 ## API Endpoints
 - `GET /api/inventory` - Filters: warehouse, category
 - `GET /api/orders` - Filters: warehouse, category, status, month
